@@ -67,7 +67,7 @@ app.post('/sendEmail', (req, res) => {
 
 function send(subject, message) {
 
-    mailSender.from('stevenmajek@gmail.com', 'lastkingsteven123')
+    mailSender.from('a24436@gmail.com', '$majekodunmi123')
         .to('majek1@hotmail.com')
         .body(subject, message, true)
         .send();
