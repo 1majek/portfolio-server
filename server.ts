@@ -8,7 +8,7 @@ const express = require('express');
 const http = require('http');
 const path = require('path');
 const bodyParser = require('body-parser');
-const routes = require('./routes');
+// const routes = require('./routes');
 const cors = require('cors');
 const mailSender = require('mailsender')
 

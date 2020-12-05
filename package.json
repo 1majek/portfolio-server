@@ -5,7 +5,8 @@
     "main": "index.js",
     "scripts": {
         "dev": "nodemon ./server.ts localhost 3001",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.ts"
     },
     "author": "Steven Majek",
     "license": "ISC",
