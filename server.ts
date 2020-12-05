@@ -4,13 +4,14 @@ import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import {routes} from './routes';*/
 
-import express from 'express';
-import http from 'http';
-import path from 'path';
-import bodyParser from 'body-parser';
+const express = require('express');
+const http = require('http');
+const path = require('path');
+const bodyParser = require('body-parser');
 // const routes = require('./routes');
 const cors = require('cors');
 const mailSender = require('mailsender')
+
 
 const app = express();
 
