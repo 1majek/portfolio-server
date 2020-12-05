@@ -4,26 +4,26 @@ import * as path from 'path';
 import * as bodyParser from 'body-parser';
 import {routes} from './routes';*/
 
-const express = require('express');
-const http = require('http');
-const path = require('path');
-const bodyParser = require('body-parser');
+import express from 'express';
+import http from 'http';
+import path from 'path';
+import bodyParser from 'body-parser';
 // const routes = require('./routes');
 const cors = require('cors');
 const mailSender = require('mailsender')
 
 const app = express();
 
-/*let corsOptions = {
+let corsOptions = {
     origin: 'http://localhost:4200',
     // origin: 'https://1majek.github.io/stevenmajek',
     optionsSuccessStatus: 200 // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
 
-app.use(cors(corsOptions)); */
+app.use(cors(corsOptions));
 
 
-app.use(function(req, res, next) {
+/*app.use(function(req, res, next) {
     res.header('Access-Control-Allow-Origin', '*');
     res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
     res.header('Access-Control -Allow-Methonds,', 'OPTIONS, GET, POST PUT, DELETE');
@@ -33,7 +33,7 @@ app.use(function(req, res, next) {
         console.log(`${res.ip} ${req.method} ${req.url}`);
         next();
     }
-});
+});*/
 
 const port = process.env.PORT || 3001;
 app.use(bodyParser.json());
